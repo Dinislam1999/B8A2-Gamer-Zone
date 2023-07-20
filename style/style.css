@@ -1,89 +1,130 @@
-/* ------------------------------Universal Style-------- */
-*{
+/*---------------------------------------------- IMPORT GOOGLE FONT ---------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/*---------------------------------------------- UNIVERSAL STYLES -----------------------------------*/
+* {
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
 }
-/* header section Style Start Here */
-nav{
+
+/*---------------------------------------------- CSS VARIABLES  ------------------------------------*/
+:root {
+    --h-color: purple;
+    --p-color: blue;
+    --pink: #FF42A5;
+}
+
+/*----------------------------------------- HEADER SECTION STYLES START  ---------------------------*/
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1%;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
 }
-.logo{
+
+.header-icon {
     display: flex;
     align-items: center;
-    gap: 8%;
+    gap: 7%;
 }
-.logo img{
-   width: 85px;
-   height: 40px;
-   flex-shrink: 0;
+
+.header-icon img {
+    width: 86.041px;
+    height: 40px;
+    flex-shrink: 0;
 }
-.logo-description{
-    color: pink;
-    font-size: 43px;
-    font-weight: 800;
-}
-.design{
+
+.header-heading {
+    color: #0B0223;
     font-size: 45px;
-    font-weight: 800;
-    color: pink;
+    font-weight: 700;
 }
-.nav-bar{
+
+.header-heading-later {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.header-links {
     width: 40%;
 }
-.nav-bar ul{
+
+.header-links ul {
     display: flex;
     align-items: center;
     list-style: none;
     justify-content: space-around;
 }
-.nav-bar ul a{
+
+.header-links ul li {
+    height: 50%;
+    color: #3C354F;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header-links ul a {
     text-decoration: none;
 }
-.nav-bar-button{
+
+.header-button-link {
     padding: 2%;
 }
-.icon-button{
+
+.header-button {
     width: 200px;
     height: 30px;
     flex-shrink: 0;
     font-size: 1vw;
     border-radius: 8px;
     background: rgba(11, 2, 35, 0.10);
-    color: #3c364f;
+    color: #3C354F;
     text-align: center;
+    font-size: 18px;
     font-weight: 500;
     border: 0;
     cursor: pointer;
 }
 
-/* -------------------header section Style End Here--------------- */
-/* ----------------------banner section style Start here ----------------------*/
-.banner{
+/*----------------------------------------- HEADER SECTION STYLES END  ---------------------------*/
+
+/*--------------------------------------- SIGN IN SECTION STYLES START  --------------------------*/
+.signin {
+
     display: flex;
+    align-items: center;
     height: 100vh;
-    align-items: center;
 }
-.banner-description{
-    align-items: center;
+
+.signin-description {
+    background-image: url(../assets/images/background1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
 }
-.banner-header{
-    color: #0b0223;
+
+.signin-title {
+    color: #0B0223;
     text-align: center;
     font-family: Work Sans;
     font-size: 45px;
     font-weight: 600;
     text-transform: uppercase;
 }
-.banner-GOAT{
+
+.signin-abbr {
     text-align: center;
     font-family: Work Sans;
     font-size: 90px;
@@ -96,17 +137,19 @@ nav{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.banner-paragraph{
+
+.signin-description-text p {
     color: #534C64;
     font-size: 20px;
     font-weight: 500;
     margin: 2% 0%;
     text-transform: lowercase;
 }
-.sign-button{
+
+.pink-button {
     padding: 17px 35px;
     border-radius: 48px;
-    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
@@ -115,7 +158,8 @@ nav{
     margin-top: 3%;
     cursor: pointer;
 }
-.Go-button{
+
+.skyblue-button {
     display: inline-flex;
     padding: 17px 35px;
     align-items: flex-start;
@@ -130,16 +174,86 @@ nav{
     margin-top: 3%;
     cursor: pointer;
 }
-.banner-img{
+
+.signin-image {
     width: 50%;
     height: 100%;
 }
-.banner-img img{
-    width: 85%;
+
+.signin-image img {
+    width: 86%;
     height: 100%;
 }
-/*--------- banner section style end here --------------*/
-.online Games{
+
+/*--------------------------------------- SIGN IN SECTION STYLES END  --------------------------*/
+
+/* <!-------------------------- GAMER SECTION STYLE START ------------------------> */
+
+
+
+.gamer {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    margin: 3% auto;
+}
+
+.gamer-image {
+    width: 200%;
+}
+
+.gamer-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.gamer-description {
+    text-align: right;
+}
+
+.gamer-description-header {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 4%;
+}
+
+.gamer-description-text {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.gamer-description-footer-text {
+    color: #534C64;
+    font-family: Work Sans;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.gamer-description-footer-text-hed {
+    color: #534C64;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    /* 187.5% */
+}
+
+/* <!------------------------- GAMMER SECTION STYLE END  ------------------------> */
+
+/* <!------------------------ VIDEO SECTION  STYLES START  -----------------> */
+.video {
     width: 85%;
     margin: 11% auto 10% auto;
 }
@@ -249,6 +363,71 @@ nav{
 .video-image-item p {
     margin-top: 5%;
 }
+
+/* <!------------------------ VIDEO SECTION  STYLES END  -----------------> */
+/*---------------------------- NO DOWNLOAD SECTION STYLES START -----------------------*/
+
+.no-download {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    gap: 70px;
+}
+
+.no-download-heading {
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.no-download-description-paragraph {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.no-download-heading-color {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: right;
+    font-family: Work Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.no-download-description {
+    width: 400px;
+    margin: auto;
+}
+
+.no-download-images {
+    position: relative;
+}
+
+.no-download-image-card {
+    position: absolute;
+    width: 60%;
+    top: 60%;
+    right: 55%;
+}
+
+.no-download-images img {
+    width: 80%;
+}
+
+/*---------------------------- NO DOWNLOAD SECTION STYLES END -----------------------*/
 /*---------------------------- ONLINE SECTION STYLES START -----------------------*/
 
 .online {
@@ -311,105 +490,72 @@ nav{
 .online-images img {
     width: 80%;
 }
-/* no download start here  */
-.no-download {
+
+/*---------------------------- ONLINE SECTION STYLES END -----------------------*/
+
+/*---------------------------- CAREERS SECTION STYLES START ---------------------*/
+.careers {
     display: flex;
-    width: 80%;
-    margin: auto;
+    justify-content: space-around;
+    margin-top: 25%;
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    gap: 70px;
+    height: 98vh;
+    ;
 }
 
-.no-download-description {
-    width: 300px;
-    margin: auto;
-    text-align: center;
+.careers-description {
+    width: 40%;
+    margin-left: 6%;
 }
 
-.no-download-heading {
-    text-align: center;
+.careers-image {
+    width: 60%;
 }
 
-.no-download-description-paragraph {
-    margin-top: 21%;
-    text-align: center;
+.careers-image img {
+    width: 100%;
 }
 
-.no-download-images {
-    width: 80%;
+.careers-button {
+    padding: 16px 31px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 48px;
+    background: #FFF;
+    border: 0;
+    cursor: pointer;
 }
 
-/* -------------------------no download end head ------------- */
-
-/*-------------------------online start here  -----------------------*/
-
-.online {
-    margin: 20% auto 10% auto;
-    display: flex;
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-    text-align: right;
-    gap: 70px;
-    flex-direction: row-reverse;
-}
-
-.online-heading {
-    text-align: right;
+.careers-heading {
+    color: #FFF;
     font-family: Work Sans;
     font-size: 48px;
-    font-style: normal;
     font-weight: 700;
     line-height: 60px;
 }
 
-.online-description-paragraph {
-    color: #534C64;
-    text-align: right;
-    font-size: 18px;
+.careers-description>p {
+    color: #FFF;
+    font-size: 16px;
     font-weight: 400;
     line-height: 30px;
 }
 
-.online-heading-color {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: right;
-    font-family: Work Sans;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
+.careers-list {
+    display: flex;
+    gap: 70px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 5% auto;
 }
 
-.online-description {
-    width: 400px;
-    margin: auto;
-}
+/*---------------------------- CAREERS SECTION STYLES END ---------------------*/
 
-.online-images {
-    position: relative;
-}
-
-.online-image-card {
-    position: absolute;
-    width: 60%;
-    top: 60%;
-    left: 50%;
-}
-
-.online-images img {
-    width: 80%;
-}
-
-/*---------------------------- online end here -----------------------*/
-
-/* -----------------------game Type start here------------- */
+/*---------------------------- GAME TYPE SECTION STYLES START  ---------------------*/
 .game-type {
     display: flex;
     flex-direction: column;
@@ -456,9 +602,9 @@ nav{
     display: none;
 }
 
-/*---------------------------- game end here  ---------------------*/
+/*---------------------------- GAME TYPE SECTION STYLES END  ---------------------*/
 
-/* ------------------------footer start here ---------------------*/
+/*---------------------------- FOOTER SECTION STYLES START  ---------------------*/
 footer {
     background: #0B0223;
     width: 100%;
@@ -510,7 +656,7 @@ footer {
     gap: 20px;
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -521,8 +667,489 @@ footer {
 .coppywrite {
     color: rgba(255, 255, 255, 0.60);
     text-align: center;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 500;
 }
 
-/*---------------------------- footer end here  ---------------------*/
+/*---------------------------- FOOTER SECTION STYLES END  ---------------------*/
+
+/*--------------------------------------- MOBILE RESPONSIVE SECTION START ---------------------------*/
+@media screen and (max-width:576px) {
+
+    /*---------------------- MOBILE HEADER SECTION STYLES START  ------------------*/
+    nav {
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .header-links ul {
+        display: flex;
+        flex-direction: column;
+        margin: 31px;
+        gap: 16px;
+    }
+
+    /*---------------------- MOBILE HEADER SECTION STYLES END  ------------------*/
+
+    /*-------------------- MOBILE SIGN IN SECTION STYLES START  -------------------*/
+    .signin {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 80%;
+        margin: auto;
+    }
+
+    .signin-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .signin-description {
+        width: 100%;
+
+    }
+
+    .signin-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*-------------------- MOBILE SIGN IN SECTION STYLES END  -------------------*/
+
+    /* <!-------------------------- MOBILE GAMER SECTION START ------------------------> */
+    .gamer {
+        flex-direction: column;
+        width: 85%;
+        margin: 20% auto;
+    }
+
+    .gamer-image {
+        width: 96%;
+    }
+
+    .gamer-image img {
+        width: 101%;
+        height: 100%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .gamer-description {
+        text-align: center;
+        width: 80%;
+    }
+
+    .gamer-description-text {
+        text-align: center;
+    }
+
+    .gamer-description-header {
+        text-align: center;
+    }
+
+    .gamer-description-footer-text-hed {
+        text-align: center;
+    }
+
+    /* <!-------------------------MOBILE GAMER SECTION END  ------------------------> */
+
+    /* <!----------------------------- MOBILE VIDEO SECTION START  ----------------->  */
+    .video-images {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .video-image-item {
+        position: relative;
+        width: 78%;
+        margin: auto;
+    }
+
+    .video-heading {
+        font-size: 25px;
+    }
+
+    .video-heading-color {
+        font-size: 25px;
+    }
+
+    .video-sub-heading {
+        font-size: 15px;
+    }
+
+    .video-image-item p {
+        margin: 5% auto 5% auto;
+        width: 65%;
+    }
+
+    /* ------------------------------- MOBILE VIDEO SECTION END -----------------------*/
+
+    /*----------------------------- MOBILE  NO DOWNLOAD SECTION START -------------------------*/
+    .no-download {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+    }
+
+    .no-download-description {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .no-download-heading,
+    .no-download-description-paragraph {
+        text-align: center;
+    }
+
+    .no-download-description-paragraph {
+        margin-top: 21%;
+    }
+
+    .no-download-images {
+        width: 80%;
+    }
+
+    /*----------------------------- MOBILE NO DOWNLOAD SECTION END -------------------------*/
+
+    /*---------------------------- MOBILE ONLINE SECTION STYLES START -----------------------*/
+    .online {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+        margin: 20% auto 10% auto;
+    }
+
+    .online-description {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .online-heading {
+        text-align: center;
+    }
+
+    .online-description-paragraph {
+        text-align: center;
+        margin-top: 21%;
+    }
+
+    .online-images {
+        width: 80%;
+    }
+
+    /*---------------------------- MOBILE ONLINE SECTION STYLES END -----------------------*/
+    /*---------------------------- MOBILE CAREERS SECTION STYLES START ---------------------*/
+    .careers {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .careers-description {
+        width: 82%;
+        margin-left: 0;
+    }
+
+    .careers-image {
+        width: 80%;
+        margin-top: 9%;
+    }
+
+    .careers-list {
+        gap: 133px;
+        font-size: 14px;
+    }
+
+    .careers-description>p {
+        font-size: 13px;
+    }
+
+    .careers-heading {
+        margin-top: 9%;
+    }
+
+    /*---------------------------- MOBILE CAREERS SECTION STYLES END ---------------------*/
+
+    /*----------------------------- MOBILE  GAME TYPE SECTION STYLES START  ---------------------*/
+    .game-type {
+        display: none;
+    }
+
+    .game-type-mobile {
+        display: block;
+    }
+
+    .game-type-mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9px;
+        margin-top: 8%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 8% auto;
+    }
+
+    .game-type-item img {
+        width: 28%;
+    }
+
+    .game-type-item {
+        gap: 0;
+        font-size: 12px;
+    }
+
+    /*---------------------------- MOBILE FOOTER SECTION STYLE START  -------------------------*/
+
+    footer {
+        height: 650px;
+    }
+
+    .connections {
+        display: grid;
+        grid-template-columns: repeat(2, 150px);
+    }
+
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(3, 72px);
+        gap: 14px;
+        text-align: center;
+    }
+
+    .polycies {
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(2, 174px);
+    }
+
+    /*---------------------------- MOBILE FOOTER SECTION STYLE END  -------------------------*/
+    /*----------------------------- MOBILE  GAME TYPE SECTION STYLES END  ---------------------*/
+}
+
+
+
+
+/*---------------------------------------- MOBILE RESPONSIVE SECTION END ----------------------------*/
+
+/*---------------------------------------- TAB RESPONSIVE SECTION START ----------------------------*/
+@media screen and (min-width:577px) and (max-width:960px) {
+
+    /*-------------------  TAB HEADER SECTION STYLES START  ------------------*/
+    nav {
+        display: flex;
+        flex-direction: column;
+        box-shadow: none;
+    }
+
+    .header-links ul {
+        display: flex;
+        flex-direction: column;
+        margin: 31px;
+        gap: 16px;
+    }
+
+    /*---------------------- TAB HEADER SECTION STYLES END  ------------------*/
+
+    /*---------------------- TAB SIGN IN SECTION STYLES START  ------------------*/
+    .signin {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 86%;
+        margin: auto;
+    }
+
+    .signin-image {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .signin-description {
+        width: 100%;
+
+    }
+
+    /*---------------------- TAB SIGN IN SECTION STYLES END  ------------------*/
+
+    /* <!----------------------------- TAB VIDEO SECTION START  ----------------->  */
+    .video-images {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .video-image-item {
+        position: relative;
+        width: 78%;
+        margin: auto;
+    }
+
+    .video-heading {
+        font-size: 33px;
+    }
+
+    .video-heading-color {
+        font-size: 31px;
+    }
+
+    .video-sub-heading {
+        font-size: 15px;
+    }
+
+    .video-image-item p {
+        margin: 5% auto 5% auto;
+        width: 68%;
+    }
+
+
+    /* <!----------------------------- TAB VIDEO SECTION END  ----------------->  */
+
+    /*----------------------------- NO DOWNLOAD SECTION START -------------------------*/
+    .no-download {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+    }
+
+    .no-download-description {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .no-download-heading {
+        text-align: center;
+    }
+
+    .no-download-description-paragraph {
+        margin-top: 21%;
+        text-align: center;
+    }
+
+    .no-download-images {
+        width: 80%;
+    }
+
+    /*-----------------------------TAB NO DOWNLOAD SECTION END -------------------------*/
+
+    /* <!-------------------------- TAB ONLINE SECTION START ------------------------> */
+    .online {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        gap: 70px;
+        margin: 20% auto 10% auto;
+    }
+
+    .online-description {
+        width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .online-heading {
+        text-align: center;
+    }
+
+    .online-description-paragraph {
+        margin-top: 21%;
+        text-align: center;
+    }
+
+    .online-images {
+        width: 80%;
+    }
+
+    /* <!------------------------- TAB ONLINE SECTION END  ------------------------> */
+
+    /*---------------------------- TAB CAREERS SECTION STYLES START ---------------------*/
+    .careers {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .careers-description {
+        width: 82%;
+        margin-left: 0;
+    }
+
+    .careers-image {
+        width: 80%;
+        margin-top: 9%;
+    }
+
+    .careers-list {
+        gap: 133px;
+        font-size: 14px;
+    }
+
+    .careers-description>p {
+        font-size: 13px;
+    }
+
+    .careers-heading {
+        margin-top: 9%;
+    }
+
+    /*---------------------------- TAB CAREERS SECTION STYLES END ---------------------*/
+
+    /*----------------------------- MOBILE  GAME TYPE SECTION STYLES START  ---------------------*/
+    .game-type {
+        display: none;
+    }
+
+    .game-type-mobile {
+        display: block;
+    }
+
+    .game-type-mobile {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 9px;
+        margin-top: 8%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        margin: 8% auto;
+    }
+
+    .game-type-item img {
+        width: 28%;
+    }
+
+    .game-type-item {
+        gap: 0;
+        font-size: 12px;
+    }
+
+    /*----------------------------- MOBILE  GAME TYPE SECTION STYLES END  ---------------------*/
+}
+
+/*---------------------------------------- TAB RESPONSIVE SECTION END ----------------------------*/
