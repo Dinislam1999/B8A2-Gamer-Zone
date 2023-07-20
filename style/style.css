@@ -311,6 +311,38 @@ nav{
 .online-images img {
     width: 80%;
 }
+/* no download start here  */
+.no-download {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 70px;
+}
+
+.no-download-description {
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}
+
+.no-download-heading {
+    text-align: center;
+}
+
+.no-download-description-paragraph {
+    margin-top: 21%;
+    text-align: center;
+}
+
+.no-download-images {
+    width: 80%;
+}
+
+/* -------------------------no download end head ------------- */
 
 /*-------------------------online start here  -----------------------*/
 
